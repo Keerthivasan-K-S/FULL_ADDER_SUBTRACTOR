@@ -36,23 +36,63 @@ Diff = A ⊕ B ⊕ Bin
 
 Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
+**FULL ADDER:**
 
-**Procedure**
+![image](https://github.com/gauthamkrishna7/FULL_ADDER_SUBTRACTOR/assets/141175025/45c32fff-2e17-4c4a-a926-b76cb65d64c0)
 
-Write the detailed procedure here
+**FULL SUBTRACTOR:**
 
-**Program:**
+![image](https://github.com/gauthamkrishna7/FULL_ADDER_SUBTRACTOR/assets/141175025/3b04b320-ce82-4700-b219-98653b5c6d2c)
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+## Procedure
 
-**RTL Schematic**
+**Full Adder:**
 
-**Output Timing Waveform**
+1.Open Quartus II and create a new project.
 
-**Result:**
+2.Use schematic design entry to draw the full adder circuit. 
 
+3.The circuit consists of XOR, AND, and OR gates. 
+
+4.Compile the design, verify its functionality through simulation. 
+
+5.Implement the design on the target device and program it.
+
+
+**Full Subtractor:** 
+
+1.Follow the same steps as for the full adder.
+ 
+2.Draw the full subtractor circuit using schematic design. 
+
+3.The circuit includes XOR, AND, OR gates to perform subtraction. 
+
+4.Compile, simulate, implement, and program the design similarly to the full adder.
+
+## Program:
+
+Developed by: Keerthivasan K S 
+RegisterNumber: 212224230120
+
+```
+module Exp_4(a,b,sum,cin,carry,bin,BO,DIFF);
+input a,b,cin,bin;
+output sum,carry,BO,DIFF;
+assign sum=a^b^cin;
+assign carry= ((a&b) | (a&cin) | (b&cin));
+assign BO= ((~a&b) | (~a&bin) | (b&bin));
+assign DIFF=a^b^cin;
+endmodule
+```
+
+## RTL Schematic
+
+<img width="549" height="495" alt="image" src="https://github.com/user-attachments/assets/e3b4148f-8562-42fe-b9c8-33837dd90486" />
+
+## Output Timing Waveform
+<img width="1919" height="575" alt="image" src="https://github.com/user-attachments/assets/cc538d75-b0cd-45a3-897d-121ad1a31d06" />
+
+## Result:
 Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
 
 
