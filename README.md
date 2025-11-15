@@ -90,7 +90,7 @@ endmodule
 <img width="549" height="495" alt="image" src="https://github.com/user-attachments/assets/e3b4148f-8562-42fe-b9c8-33837dd90486" />
 
 ## Output Timing Waveform
-<img width="1919" height="575" alt="image" src="https://github.com/user-attachments/assets/cc538d75-b0cd-45a3-897d-121ad1a31d06" />
+![image](https://github.com/gauthamkrishna7/FULL_ADDER_SUBTRACTOR/assets/141175025/41a89d30-bde2-44fa-809b-3683dee78211)
 
 ## Result:
 Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
